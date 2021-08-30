@@ -418,12 +418,13 @@ type (
 	}
 )
 
+// https://discord.com/developers/docs/interactions/receiving-and-responding#interaction-object-interaction-type
 type InteractionType uint
 
 const (
 	PingInteraction InteractionType = iota + 1
 	CommandInteraction
-	ButtonInteraction
+	ComponentInteraction
 )
 
 // TODO: InteractionData is being overloaded by Slash Command and Button at the moment.
